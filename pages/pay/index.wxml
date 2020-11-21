@@ -1,0 +1,22 @@
+<Tabs tabs="{{tabs}}" bindchangeTitle="changeTitle"></Tabs>
+<block wx:if="{{tabs[0].isActive==true}}">
+       <navigator class="goodsItems"  wx:for="{{payList}}" wx:key="goods_id" url="/pages/goods/goods?goodsid={{item.goods_id}}"  hover-class="none" open-type="navigate">
+           <view class="goodsImages">
+           <image  src="{{item.goods_big_logo}}" mode="widthFix" />
+             </view>
+             <view class="goodsInfo">
+             <view class="goodsName">
+                 {{item.goods_name}}
+             </view>
+               <view class="goodsInfoB">
+                   <view class="goodsPrice">
+                ￥{{item.goods_price}}
+             </view>
+               <view class="goodsSell">
+            {{item.time}}
+             </view>
+               </view>
+                 
+             </view>  </navigator>
+         </block>
+ 

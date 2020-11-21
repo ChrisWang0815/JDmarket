@@ -1,0 +1,81 @@
+<!-- 登录 -->
+<view class="user">
+  <!-- 登录成功 -->
+<view wx:if="{{userInfo}}">
+<view class="bkg">
+    <image  src="{{userInfo.avatarUrl}}" mode="scaleToFill" />
+</view>
+  
+<view class="header" >
+<view class="headerImage">
+    <image src="{{userInfo.avatarUrl}}" alt=""  mode="scaleToFill" />
+    
+</view>
+  
+    <view class="username">
+    欢迎光临，{{userInfo.nickName}}{{userInfo.gender==1?"先生":"女士"}}
+    </view>
+</view></view>
+
+ <!-- 未登录 -->
+<view wx:else>
+  <button class="login" open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="primary">请登录</button>
+</view>
+</view>
+
+
+<!-- 功能模块 -->
+
+
+
+<view class="function">
+  
+
+  <!-- 订单 -->
+<view class="option">
+   <view class="optionItems"  bindtap="getOrderList" data-index="{{0}}">
+   <view>
+ <image mode="widthFix" src="../../img/order.png" /></view>
+ <view>全部订单</view>
+   </view>
+        <view class="optionItems" bindtap="getOrderList" data-index="{{1}}">
+  <view>
+ <image mode="widthFix" src="../../img/order2.png" /></view>
+ <view>待收货</view>
+   </view>  <view class="optionItems" bindtap="getOrderList" data-index="{{2}}">
+  <view>
+ <image mode="widthFix" src="../../img/order3.png" /></view>
+ <view>待付款</view>
+   </view>     
+        
+</view>
+
+<!-- 我的收藏 -->
+<view class="option">
+   <navigator class="optionItems"  url="/pages/collect/collect">
+ <view class="num">{{collectedNum}}</view>
+
+ <view>我的收藏</view>
+   </navigator>
+      
+   <navigator class="optionItems"  url="/pages/feet/feet" >
+ <view  class="num">{{feetNum}}</view>
+
+ <view>我的足迹</view>
+   </navigator>
+
+   <navigator class="optionItems" bindtap="show"  >
+ <view  class="num">0</view>
+
+ <view>我的红包</view>
+   </navigator>
+   </view>
+
+    <!-- 反馈 -->
+ <navigator hover-class="none" url="/pages/feedback/index" class="feedback" bindtap="feedback">意见反馈</navigator>
+</view>
+  
+
+
+
+  

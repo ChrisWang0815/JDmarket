@@ -1,0 +1,79 @@
+<!--pages/goodslist/goodslist.wxml-->
+<Tabs tabs="{{tabs}}" bindchangeTitle="changeTitle"></Tabs>
+
+<block wx:if="{{tabs[0].isActive}}">
+   <view class="firstTab">
+       <navigator class="goodsItems" hidden="{{item.goods_price==0}}" wx:for="{{goodsList}}" wx:key="goods_id" url="/pages/goods/goods?goodsid={{item.goods_id}}"  hover-class="none" open-type="navigate">
+           <view class="goodsImages">
+           <image  src="{{item.goods_big_logo?item.goods_big_logo:'../../img/none.jpg'}}" mode="widthFix" />
+             </view>
+             <view class="goodsInfo">
+             <view class="goodsName">
+                 {{item.goods_name}}
+             </view>
+               <view class="goodsInfoB">
+                   <view class="goodsPrice">
+                ￥{{item.goods_price}}
+             </view>
+               <view class="goodsSell">
+            销量：{{item.random}}件
+             </view>
+               </view>
+                 
+             </view>
+       </navigator>
+         
+   </view>
+      
+</block>
+<block wx:if="{{tabs[1].isActive}}">
+   <view >
+       <navigator class="goodsItems" hidden="{{item.goods_price==0}}" wx:for="{{priceOrder}}" wx:key="goods_id" url="/pages/goods/goods?goodsid={{item.goods_id}}"  hover-class="none" open-type="navigate">
+           <view class="goodsImages">
+           <image  src="{{item.goods_big_logo?item.goods_big_logo:'../../img/none.jpg'}}" mode="widthFix" />
+             </view>
+             <view class="goodsInfo">
+             <view class="goodsName">
+                 {{item.goods_name}}
+             </view>
+               <view class="goodsInfoB">
+                   <view class="goodsPrice">
+                ￥{{item.goods_price}}
+             </view>
+               <view class="goodsSell">
+            销量：{{item.random}}件
+             </view>
+               </view>
+                 
+             </view>
+       </navigator>
+         
+   </view>
+      
+</block>
+
+<block wx:if="{{tabs[2].isActive}}">
+   <view >
+       <navigator class="goodsItems" hidden="{{item.goods_price==0}}" wx:for="{{numOrder}}" wx:key="goods_id" url="/pages/goods/goods?goodsid={{item.goods_id}}"  hover-class="none" open-type="navigate">
+           <view class="goodsImages">
+           <image  src="{{item.goods_big_logo?item.goods_big_logo:'../../img/none.jpg'}}" mode="widthFix" />
+             </view>
+             <view class="goodsInfo">
+             <view class="goodsName">
+                 {{item.goods_name}}
+             </view>
+               <view class="goodsInfoB">
+                   <view class="goodsPrice">
+                ￥{{item.goods_price}}
+             </view>
+               <view class="goodsSell">
+            销量：{{item.random}}件
+             </view>
+               </view>
+                 
+             </view>
+       </navigator>
+         
+   </view>
+      
+</block>

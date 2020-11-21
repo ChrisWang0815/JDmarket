@@ -1,0 +1,81 @@
+<view class="fixed"></view>
+
+  
+<!-- 轮播图 -->
+<swiper class="" indicator-dots="true"  autoplay
+   nterval="3000" duration="1000" circular="true">
+   <swiper-item wx:for="{{goodsinfo.pics}}" wx:key="pics_id"> 
+     <image class="swiperimg" src="{{item.pics_sma}}" mode="widthFix" data-url="{{item.pics_big}}" bindtap="preview"/> 
+   </swiper-item>
+</swiper>
+<!-- 文字信息 -->
+<view class="textinfo">
+
+<view class="bottominfo">
+<view class="price">
+    {{goodsinfo.goods_price}}元
+</view>
+ <view class="num">
+ <view>
+   销量：17万+
+ </view>
+   
+    
+</view>
+</view>
+<view class="topinfo">
+  {{goodsinfo.goods_name}}
+</view>
+
+<!-- 选项 -->
+<view class="icon">
+  <view class="iconitems {{isCollected==false ?'':'red'}}" bindtap="collect">
+  <i class="iconfont {{isCollected==false ? 'icon-biaoqiankuozhan_tuijian-399' : 'icon-biaoqiankuozhan_tuijian-399-copy'}}"  ></i>{{isCollected==false ?'收藏':'已收藏'}}
+  </view>
+
+<view class="iconitems" bindtap="share">
+  <i class="iconfont icon-biaoqiankuozhan_wode-250"></i>帮我选
+  </view>
+
+<view class="iconitems" bindtap="share">
+  <i class="iconfont icon-biaoqiankuozhan_luntan-149"></i>分享
+</view> 
+</view>
+</view>
+
+
+<!-- 图文信息 -->
+<view class="introduce">
+
+<rich-text class="" nodes="{{goodsinfo.goods_introduce}}">
+  
+</rich-text>
+  
+</view>
+
+
+<!-- 底部按钮 -->
+<view class="button">
+<view class="options">
+<view class="optionsitems" bindtap="share">
+  <i class="iconfont icon-biaoqiankuozhan_wode-250"></i>客服
+  </view>
+
+<view class="optionsitems" bindtap="share">
+  <i class="iconfont icon-biaoqiankuozhan_luntan-149"></i>店铺
+</view> 
+<view class="optionsitems">  <navigator  url= "/pages/car/car" hover-class="none" open-type="switchTab">
+  <i class="iconfont icon-biaoqianA01_gouwuche-09"></i>
+     购物车
+  </navigator>
+</view> 
+</view>
+<view class="check">
+<view class='car' bindtap="carAdd">
+加入购物车
+</view>
+<view class='buy'>
+立即购买
+</view>
+</view>
+</view>

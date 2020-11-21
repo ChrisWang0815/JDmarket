@@ -1,0 +1,4 @@
+<view class="search">
+<input type="text" placeholder="搜索"  bindconfirm="searchItem" />
+  
+</view>

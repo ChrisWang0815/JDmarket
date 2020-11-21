@@ -1,0 +1,56 @@
+
+.cateContent{
+  height: calc(100vh - 90rpx);  
+  display: flex;
+}
+.leftMenu{
+  flex:2;
+  text-align: center;
+  background-color: rgb(245, 244, 244);
+}
+.leftMenu .cc{
+  margin: 20rpx 50rpx;
+  border-bottom: 1px solid rgb(189, 185, 185);
+}
+.rightMenu{
+  flex:5;
+}
+.leftMenu .active{
+  position: relative;
+  color: #DC143C;
+  border-bottom: 2rpx solid #DC143C;
+  
+}
+.leftMenu .active::before{
+  content: '';
+  position: absolute;
+  width: 31rpx;
+  height: 20rpx;
+  left: -25px;
+  top: 13rpx;
+  background-color: #DC143C;
+}
+
+.goodsTitle{
+  font-size: 40rpx;
+text-align: center;
+}
+.goodsTitle text{
+  border-bottom: 4rpx solid rgb(148, 143, 143);
+}
+.goodsItems{
+  display: flex;
+  flex-wrap: wrap;
+}
+.goods{
+  margin-bottom: 50rpx;
+}
+.goodsItems navigator{
+  width: 33.3%;
+  text-align: center;
+  padding: 20rpx 20rpx;
+  
+}
+.goodsItems navigator image{
+  width: 100%;
+}

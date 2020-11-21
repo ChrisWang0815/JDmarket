@@ -1,0 +1,44 @@
+.goodsItems {
+  display: flex;
+  border-bottom: 3rpx solid #ccc;
+  height: 242rpx;
+  margin: 0 20rpx;
+}
+.goodsItems .goodsImages {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodsItems .goodsImages image {
+  width: 80%;
+}
+.goodsItems .goodsInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 3;
+}
+.goodsItems .goodsInfo .goodsName {
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goodsItems .goodsInfo .goodsInfoB {
+  display: flex;
+  justify-content: space-between;
+}
+.goodsItems .goodsInfo .goodsInfoB .goodsPrice {
+  font-size: 34rpx;
+  color: #d40a0a;
+  padding-bottom: 20rpx;
+}
+.goodsItems .goodsInfo .goodsInfoB .goodsSell {
+  font-size: 24rpx;
+  font-family: "微软雅黑";
+  color: #a3a3a3;
+}

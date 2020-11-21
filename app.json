@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/goodslist/goodslist",
+    "pages/goods/goods",
+    "pages/category/main",
+    "pages/car/car",
+    "pages/my/my",
+  "pages/pay/index",
+  "pages/collect/collect",
+  "pages/feet/feet" ,
+  "pages/feedback/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#DC143C",
+    "navigationBarTitleText": "仿京东优购",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#DC143C",
+    "position": "bottom",
+    "borderStyle": "black",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home1.png"
+      },
+      {
+        "pagePath": "pages/category/main",
+        "text": "分类",
+        "iconPath": "img/category.png",
+        "selectedIconPath": "img/category1.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "img/car.png",
+        "selectedIconPath": "img/car1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "img/my.png",
+        "selectedIconPath": "img/my1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

@@ -1,0 +1,118 @@
+.user{
+    width: 100%;
+    height: 400rpx;
+    position: relative;
+    background-color: rgb(250, 250, 250);
+    .bkg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 750rpx;
+        height: 400rpx;
+        overflow: hidden;
+        filter: blur(60rpx);
+        image{
+            width: 100%;
+        }
+    }
+    .header{ 
+        
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        width: 150rpx;
+        height: 280rpx;
+        justify-content: space-around;
+        align-items: center;
+        .headerImage{
+     
+        border: solid 5rpx rgb(192, 192, 192);
+      
+    border-radius: 50%;
+    width: 150rpx;
+    height: 150rpx;
+    overflow: hidden;
+    image{
+width: 150rpx;
+height: 150rpx;
+    }
+    }}
+   
+}
+
+.username{
+    color: rgb(243, 243, 243);
+    font-weight:600;
+    width: 300rpx;
+    text-align: center;
+    
+}
+
+.login{
+    position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30%;
+}
+.function{
+    position: absolute;
+    top: 380rpx;
+    left: 750 * 0.05 * 0.5rpx;
+    
+    width: 95%;
+ 
+}
+.option{
+    margin-bottom: 40rpx;
+    background-color: #fff;
+  width: 100%;
+    display: flex;
+    border-radius: 20rpx;
+    height: 150rpx;
+    justify-content: center;
+    justify-items: center;
+    z-index: 999;
+   .optionItems{
+       text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    image{
+        width: 60rpx;
+        
+
+    }.num{
+    color: red;
+    font-size: 32rpx;
+}
+   } 
+}
+
+page{
+    background-color: rgb(236, 236, 236);
+}
+.feedback{
+    position: relative;
+    height: 70rpx;
+    line-height: 70rpx;
+    padding-left: 40rpx;
+    font-family: "微软雅黑";
+    font-size: 32rpx;
+    width: 100%;
+background-color: #fff;
+}
+.feedback::after{
+    content: '';
+    position: absolute;
+    right: 15rpx;
+    top: 22rpx;
+    width: 0;
+    height: 0;
+    border: 15rpx solid;
+    border-color: transparent transparent transparent rgb(90, 87, 87);
+}

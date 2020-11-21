@@ -1,0 +1,45 @@
+.goodsItems{
+    display: flex;
+    border-bottom: 3rpx solid #ccc;
+    height: 242rpx;
+    margin: 0 20rpx;
+    .goodsImages{
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        image{
+            width: 80%;
+        }
+    }
+    .goodsInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 3;
+        .goodsName{ 
+            padding-top: 20rpx;
+            font-size: 30rpx;
+  overflow: hidden;
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+        }
+        .goodsInfoB{ 
+            display: flex;
+            justify-content:space-between;
+            .goodsPrice{
+            font-size: 34rpx;
+            color: rgb(212, 10, 10);
+            padding-bottom: 20rpx;
+        }.goodsSell{
+            font-size: 24rpx;
+            font-family: "微软雅黑";
+            color: rgb(163, 163, 163);
+        }
+    }
+    }
+}

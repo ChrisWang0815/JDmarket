@@ -1,0 +1,84 @@
+page{
+    background-color: #eeeeee;
+}
+
+.fb{
+    padding: 20rpx;
+    color:#666;
+    .fbTips{
+        display: flex;
+        flex-wrap: wrap;
+        text{
+            width: 30%;
+            text-align: center;
+            line-height: 50rpx;
+            height: 50rpx;
+            margin: 20rpx 10rpx;
+            border-radius: 10rpx;
+            background-color: #fff;
+        }
+        .red{
+           border:3rpx solid var(--themeColor);
+        }
+    }
+    .fbContent{
+        position: relative;
+        padding: 10rpx;
+        margin-top: 30rpx;
+        textarea{
+            padding: 10rpx;
+            height: 400rpx;
+        width: 100%;
+        background-color: #fff;
+        }
+        .fbTool{
+            .button{ 
+                z-index: 999; 
+                width: 80rpx;
+                height: 80rpx;
+                text-align: center;
+                line-height: 80rpx;
+                font-size: 40rpx;
+                color: #000;
+                background-color: rgb(204, 204, 204);}
+                display: flex;
+            position: absolute;
+            bottom: 30rpx;
+            left: 30rpx;
+            flex-wrap: wrap;
+          
+        }
+        .fbImage{
+            position: relative;
+            width: 80rpx;
+            height: 80rpx;
+            margin-left: 20rpx;
+            image{
+                width: 100%;
+                height: 100%;
+                border-radius: 10rpx
+            };
+            icon{
+                z-index: 999;
+                position: absolute;
+                right: -20rpx;
+                top: -20rpx;
+            }
+        }
+        
+    }
+
+    .fbBtn{
+       margin-top: 30rpx;
+        width: 100%;
+        line-height: 100rpx;
+        text-align: center;
+        font-size: 32rpx;
+        border-radius: 20rpx;
+        color: #fff;
+        background-color: rgb(182, 18, 18);
+        border:3rpx solid var(--themeColor);
+        
+        height: 100rpx;
+    }
+}

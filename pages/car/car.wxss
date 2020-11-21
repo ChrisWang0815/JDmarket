@@ -1,0 +1,145 @@
+.goodsItems {
+  flex: 4;
+  display: flex;
+}
+.goodsItems .goodsImages {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodsItems .goodsImages image {
+  width: 80%;
+}
+.goodsItems .goodsInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 3;
+}
+.goodsItems .goodsInfo .goodsName {
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goodsInfoB {
+  display: flex;
+  justify-content: space-between;
+}
+.goodsInfoB .goodsPrice {
+  font-size: 34rpx;
+  color: #d40a0a;
+  padding-bottom: 20rpx;
+}
+.goodsSell {
+  display: flex;
+  width: 150rpx;
+  justify-content: center;
+  align-content: center;
+  color: #6e6e6e;
+  height: 50rpx;
+}
+.num {
+  flex: 1;
+  text-align: center;
+  line-height: 50rpx;
+  height: 100%;
+}
+.minus,
+.plus {
+  z-index: 999;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-align: center;
+  flex: 1;
+  height: 100%;
+  border: solid 4rpx #a3a3a3;
+}
+.address {
+  border-bottom: 3rpx solid #cfcfcf;
+  width: 100%;
+  height: 150rpx;
+}
+.address .addA {
+  text-align: center;
+  width: 200rpx;
+  height: 100rpx;
+  border: 3rpx solid #00b41e;
+  background-color: #06cf27;
+  margin: 50rpx auto!important;
+  color: whitesmoke;
+  line-height: 100rpx;
+  border-radius: 20rpx;
+}
+.text {
+  font-weight: bolder;
+  font-size: 30rpx;
+}
+page {
+  background-color: #eeeeee;
+}
+.addressInfo {
+  height: 130rpx;
+  padding: 10rpx 20rpx;
+  margin: 20rpx 5px;
+  border-radius: 20rpx;
+  background-color: white;
+}
+.content {
+  display: flex;
+  border-bottom: 3rpx solid #ccc;
+  height: 242rpx;
+  margin: 10rpx 5rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+.content checkbox-group {
+  flex: 0.5;
+}
+.content checkbox-group .checkbox {
+  margin: 100rpx 20rpx;
+}
+.button {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  background-color: #fafafa;
+}
+.button .options {
+  flex: 1;
+  display: flex;
+}
+.button .options checkbox {
+  margin-left: 10rpx;
+}
+.button .check {
+  flex: 1.5;
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+}
+.button .check .price {
+  flex: 1;
+  color: black;
+  text-align: center;
+  margin-right: 10rpx;
+  font-size: 30rpx;
+}
+.button .check .price span:nth-child(2) {
+  color: var(--themeColor);
+}
+.button .check .buy {
+  flex: 1;
+  background: linear-gradient(var(--themeColor), #e46363);
+}
+.none {
+  width: 100%;
+}

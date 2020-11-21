@@ -1,0 +1,30 @@
+<!--pages/goodslist/goodslist.wxml-->
+<Tabs tabs="{{tabs}}" bindchangeTitle="changeTitle"></Tabs>
+
+<block wx:if="{{tabs[0].isActive}}">
+<view class="fb">
+<view class="fbTitle">请选择您要反馈的意见类型</view>
+<view class="fbTips">
+ <text bindtap="chooseTips" class="{{item.isActive?'red':''}}" data-index="{{index}}" wx:for="{{tips}}" wx:key="id">{{item.name}}</text>
+ 
+</view>
+<view class="fbContent">
+<textarea bindinput="handleTextInput" placeholder="请详细描述您的问题，以便为您解决问题~" />
+  
+  <view class="fbTool">
+  <view class="button" bindtap="uploadImg" >+</view>
+    <view class="fbImage" wx:for="{{imageOrder}}" wx:key="*this">
+  <image  src="{{item}}" mode="aspectFill" />
+  <icon  type="clear" size="23" color="red" data-index="{{index}}" bindtap="deleteImg"  />
+</view>
+
+  </view>
+
+</view>
+<view class="fbBtn" bindtap="fbSubmit">提交</view>
+</view>
+
+
+</block>
+
+  

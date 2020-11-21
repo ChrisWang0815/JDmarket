@@ -1,0 +1,13 @@
+.search{
+    height: 90rpx;
+    padding: 10rpx;
+    background-color: var(--themeColor);
+}
+.search input{
+height: 100%;
+display: flex;
+background-color: #fff;
+border-radius: 16rpx;
+color: #999;
+text-align: center;
+}

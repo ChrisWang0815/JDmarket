@@ -1,0 +1,82 @@
+<!-- 收货地址 -->
+<view class="address">
+<view class="addA" bindtap="selectAddress" wx:if="{{!address}}">
+添加收货地址
+</view>
+<view class="addressInfo" wx:if="{{address}}">
+<view>
+    <span class="text">
+    {{address.userName}}
+</span><span>{{address.telNumber}}</span>
+</view>
+  
+<view style="font-size:24rpx;  color: rgb(150, 150, 150); padding: 10rpx 0rpx;">
+    {{address.place}}
+</view>
+  
+</view>
+
+</view>
+<!-- 购物车列表 -->
+
+<block wx:if="{{carsList.length!=0}}" wx:for="{{carsList}}"  wx:key="goods_id">
+<view  class="content">
+   <checkbox-group data-index="{{index}}"  bindchange="goodscheck">
+       <checkbox  checked="{{item.checked}}" class="checkbox" color="#d40a0a">   
+       </checkbox>
+         
+   </checkbox-group>
+     
+       <view class="goodsItems" >
+           <navigator class="goodsImages" url="/pages/goods/goods?goodsid={{item.goods_id}}"  hover-class="none" open-type="navigate">
+             
+           
+          
+           <image  src="{{item.goods_big_logo?item.goods_big_logo:'../../img/none.jpg'}}" mode="widthFix" />
+           
+             
+             </navigator>
+             
+             <view class="goodsInfo">
+             <view class="goodsName">
+                 {{item.goods_name}}
+             </view>
+               <view class="goodsInfoB">
+                   <view class="goodsPrice">
+                ￥{{item.goods_price}}
+             </view>
+               <view class="goodsSell">
+               <view class="minus" bindtap="changeNum" data-num="{{-1}}" data-index="{{index}}">-</view>
+           <view class="num">{{item.num}}</view>
+             <view class="plus" bindtap="changeNum" data-num="{{1}}"  data-index="{{index}}">+</view>
+             </view>
+               </view>
+                 
+             </view>
+       </view>
+         
+   </view>
+ </block >
+<block wx:if="{{carsList.length==0}}">
+          <image class="none" mode="widthFix" src="../../img/carisnone.jpg" />
+            
+        </block>
+          
+<!-- 结算 -->
+<view class="button">
+<view class="options">
+  <checkbox-group bindchange="goodscheckAll">
+       <checkbox checked="{{allChecked}}"  color="#d40a0a">全选   
+       </checkbox></checkbox-group>
+</view> 
+<view class="check">
+<view class="price">
+  <span>合计：</span> <span>
+    ￥{{totalP}}
+</span> 
+</view>
+<view class='buy' bindtap="checkOut">
+总计（{{totalN}}）
+</view>
+</view>
+</view>

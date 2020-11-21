@@ -1,0 +1,18 @@
+.tabsTitle {
+  display: flex;
+  height: 80rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+}
+.tabsTitle .title {
+  flex: 1;
+  padding: 0 10rpx;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 80rpx;
+}
+.tabsTitle .active {
+  color: #DC143C;
+  border-bottom: 2rpx solid #DC143C;
+}

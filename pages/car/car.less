@@ -1,0 +1,159 @@
+.goodsItems {
+    flex: 4;
+    display: flex;
+   
+  }
+  .goodsItems .goodsImages {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .goodsItems .goodsImages image {
+    width: 80%;
+  }
+  .goodsItems .goodsInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 3;
+  }
+  .goodsItems .goodsInfo .goodsName {
+    padding-top: 20rpx;
+    font-size: 30rpx;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+ .goodsInfoB {
+    display: flex;
+    justify-content: space-between;
+  }
+  .goodsInfoB .goodsPrice {
+    font-size: 34rpx;
+    color: #d40a0a;
+    padding-bottom: 20rpx;
+  }
+ .goodsSell {
+    display: flex;
+  width: 150rpx;
+  justify-content: center;
+  align-content: center;
+    color: #6e6e6e;
+    height: 50rpx;
+
+   
+
+  }
+  .num{
+    flex: 1;
+    text-align: center;
+
+    line-height: 50rpx;
+    height: 100%;
+  }
+  .minus,.plus{
+    z-index: 999;
+    font-size: 28rpx;
+    line-height: 40rpx;
+   
+      text-align: center;
+    flex: 1;
+    height: 100%;
+
+   
+    border: solid 4rpx rgb(163, 163, 163);
+  }
+  .address{
+      border-bottom: 3rpx solid rgb(207, 207, 207);
+      width: 100%;
+      height: 150rpx;
+    
+    .addA{
+        text-align: center;
+        width: 200rpx;
+        height: 100rpx;
+        border: 3rpx solid rgb(0, 180, 30);
+        background-color:rgb(6, 207, 39);
+        margin: 50rpx auto!important;
+        color: whitesmoke;
+        line-height: 100rpx;
+        border-radius: 20rpx;
+        
+}
+}
+.text{
+    font-weight: bolder;
+    font-size: 30rpx
+}
+page{
+    background-color: rgb(238, 238, 238);
+}
+.addressInfo{
+   
+    height: 130rpx;
+   padding: 10rpx 20rpx;
+    margin: 20rpx 5px;
+    border-radius: 20rpx;
+    background-color: white;
+}
+.content{ 
+    display: flex;
+    border-bottom: 3rpx solid #ccc;
+    height: 242rpx;
+    margin: 10rpx 5rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    checkbox-group{
+        flex: 0.5;
+   .checkbox{
+    margin: 100rpx 20rpx;
+   }
+    }
+}
+
+.button{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 100rpx;
+    height: 100rpx;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+    .options{
+      
+      flex: 1;
+      display: flex;
+      checkbox {
+          margin-left: 10rpx;
+      }
+      
+    }
+    .check{
+      flex: 1.5;
+      display: flex;
+      justify-content: space-around;
+      color: whitesmoke;
+      .price{
+          flex: 1;
+            color: black;
+          text-align: center;
+          margin-right: 10rpx;
+        font-size: 30rpx;
+          span:nth-child(2){
+            color: var(--themeColor);
+          }
+      }
+      .buy{
+        flex: 1;
+        background: linear-gradient(var(--themeColor),rgb(228, 99, 99) );
+      }
+    }
+  }
+
+  .none{
+    width: 100%;
+  }

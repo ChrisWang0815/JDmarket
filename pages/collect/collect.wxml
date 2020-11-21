@@ -1,0 +1,21 @@
+ <view wx:for="{{items}}" class="goodsItems"  wx:for="{{collect}}" wx:key="goods_id">
+     
+
+   
+ <navigator class="goodsImages" url="/pages/goods/goods?goodsid={{item.goods_id}}"  hover-class="none" open-type="navigate">
+           <image  src="{{item.goods_big_logo}}" mode="widthFix" />
+</navigator>
+             <view class="goodsInfo">
+             <view class="goodsName">
+                 {{item.goods_name}}
+             </view>
+               <view class="goodsInfoB">
+                   <view class="goodsPrice">
+                ￥{{item.goods_price}}
+             </view>
+               <view class="goodsSell" bindtap="cancel" data-index="{{index}}">
+             删除
+             </view>
+               </view>
+                 
+             </view>   </view>
